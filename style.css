@@ -1,0 +1,221 @@
+@font-face {
+    font-family: Heebo;
+    src: url(Heebo-Light.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Heebo;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 00px 90px;
+    padding-top:150px ;
+    gap: 60px;
+}
+#left{
+    height: 110%;
+    width: 45%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+#left h1{
+    font-size:8.5vw;
+    font-weight: 550;
+    line-height: 7.5vw;
+}
+#bottom-left{
+    width: 100%;
+    /* height: 40%; */
+    /* background-color: yellow; */
+}
+#color{
+    /* background-color: blue; */
+    width: fit-content;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 1px solid black;
+}
+#color h5{
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: 500;
+}
+#color1{
+    height: 20px;
+    width: 20px;
+    background-color: pink;
+    border-radius: 50%;
+    margin: 3px;
+}
+#color2{
+    height: 20px;
+    width: 20px;
+    background-color: rgb(206, 60, 84);
+    border-radius: 50%;
+}
+#left h2{
+    margin-top: 40px;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+#left p{
+    font-size: 15px;
+    width: 66%;
+    font-weight: 600;
+    color: #444;
+    line-height: 20px;
+}
+#right{
+    height: 100%;
+    width: 28%;
+    /* background-color: green; */
+    position: relative;
+}
+#right-top{
+    height: 60px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+#right-top h4{
+    font-size: 20px;
+    font-weight:500 ;
+}
+#right-top h5{
+    font-size: 16px;
+}
+#right-top h5 i{
+    color: goldenrod;
+}
+#right img{
+    width: 100%;
+    height: 89%;
+    object-fit: cover;
+}
+#black-circle{
+    width: 160px;
+    height: 160px;
+    background-color: rgb(26, 26, 26);
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: -22%;
+    top: 26%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#black-circle h5{
+    font-size: 25px;
+    font-weight: 400;
+}
+#rotated{
+    position: absolute;
+    left: -10%;
+    bottom: -2%;
+    /* background-color: red; */
+    transform-origin: 0 0;
+    rotate: -90deg;
+    font-size: 22px;
+    font-weight: 500;
+}
+@media (max-width:600px) {
+    #main{
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding: 40px;
+        padding-top:20px ;
+        gap: 0px;
+    }
+    #left{
+        height: fit-content;
+        width: 100%;
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 50px;
+    }
+    #left h1{
+        font-size:17vw;
+        font-weight: 550;
+        line-height: 14vw;
+    }
+    #color{
+        padding: 3px 8px;
+        margin-top: 30px;
+    }
+    #color h5{
+        font-size: 3vw;
+        margin-right: 5px;
+    }
+    #color1{
+        height: 15px;
+        width: 15px;
+    }
+    #color2{
+        height: 15px;
+        width: 15px;
+    }
+    #left h2{
+        margin-top: 20px;
+        font-size: 23px;
+        margin-bottom: 10px;
+    }
+    #left p{
+        font-size: 12px;
+        width: 85%;
+        line-height: 15px;
+    }
+    #right{
+        height: 45%;
+        width: 100%;
+        /* background-color: green; */
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: -10px;
+    }
+    #right-top{
+        height: 60px;
+        width: 100%;
+    }
+    #right img{
+        width: 95%;
+        height: 89%;
+        object-fit: cover;
+    }
+    #black-circle{
+        width: 120px;
+        height: 120px;
+        right: -8%;
+        top: 26%;
+    }
+    #black-circle h5{
+        font-size: 20px;
+    }
+    #rotated{
+        left: -7%;
+        font-size: 20px;
+        bottom: 5%;
+    }
+}
